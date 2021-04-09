@@ -20,7 +20,8 @@ vshurlArr.push("http://iosvsh.zwzanwm.cn/app/svjl")
   //  vsh2bodyArr.push("{\"isDouble\":\"0\",\"moneyId\":\"0\",\"mark\":\"7Xmr9ty4KRFlv\\/VCryAy28zJVwg996\\/eqV61dD1DXvVzvVnHUAoO6bzEQ2QXMTCWuduSHGwdgFWIi\\/7hm0fcFdiY1GbtyN9QTvwJAcJNXEY=\",\"type\":\"2\",\"seconds\":\"45\"}")
     vshbodyArr.push("{\"isDouble\":\"0\",\"moneyId\":\"0\",\"mark\":\"a\\/ZzRgPl0ZMrVamRNgfchtWT\\/RZwdu03vd762zndizhZc\\/5ymCNyKkjRe5J3wnK8f6diW+tHnHACQMYXTzxkVvPNNAPFWBeqj8xx0\\/m4MUQ=\",\"type\":\"8\",\"seconds\":\"40\"}")
     vshqdbodyArr.push("{\"transId\":\"rY\\/m1U8pNHL07uxQtEhQXHNty0an92bNBvJIVno1KYhB7jpEDukdI5U0C0y6hkbu\",\"key\":\"12\"}")
-    vshcount = ($.getval('vshcount') || '1');
+    vshcount = ($.getval('vshcount') || '1');  /*短视频刷金币开关(1 是刷短视频，0 是不刷短视频),短视频刷金币因为时间很长,且不知道上限,默认为关闭状态,
+    脚本只会运行除了短视频之外的任务,需要刷短视频金币的,建议先跑完日常任务再去boxjs里把短视频刷金币开关改为1,之后脚本只会运行刷短视频任务。。*/
 !(async () => {
 
     console.log(`============ 脚本执行-国际标准时间(UTC)：${new Date().toLocaleString()}  =============\n`)
