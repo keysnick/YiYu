@@ -11,7 +11,7 @@ let vsh1body = $.getdata('vsh1body')
 //let vsh2body = $.getdata('vsh2body')
 let vshbody = $.getdata('vshbody')
 let vshqdbody = $.getdata('vshqdbody')
-let vshsp = ($.getval('vshsp') || '1');//短视频刷金币开关,短视频刷金币因为时间很长,且不知道上限,默认为关闭状态,脚本只会运行除了短视频之外的任务,需要刷短视频金币的,建议先跑完日常任务再去boxjs里把短视频刷金币开关改为1,之后脚本只会运行刷短视频任务。。
+let vshsp = ($.getval('vshsp') || '0');//短视频刷金币开关,短视频刷金币因为时间很长,且不知道上限,默认为关闭状态,脚本只会运行除了短视频之外的任务,需要刷短视频金币的,建议先跑完日常任务再去boxjs里把短视频刷金币开关改为1,之后脚本只会运行刷短视频任务。。
 vshurlArr.push("http://iosvsh.zwzanwm.cn/app/svjl")
     vshhdArr.push("{\"Accept\":\"*/*\",\"Content-Type\":\"application/json\",\"Accept-Encoding\":\"gzip, deflate\",\"Connection\":\"keep-alive\",\"Host\":\"iosvsh.zwzanwm.cn\",\"token\":\"22A4D57A-260D-422E-9E1E-D6A28D318CDB\",\"Content-Length\":\"90\",\"User-Agent\":\"vsh/1.13 (iPhone; iOS 14.4.2; Scale/2.00)\",\"Accept-Language\":\"zh-Hans-CN;q=1\"}")
     vshdspbodyArr.push("{\"isDouble\":\"0\",\"moneyId\":\"0\",\"mark\":\"ixQgFt2zCj8PvH247Tyk0KoYmGHfV9WaHPKNJaJpirb3S9jJnKic6VQ7czRIMUIoL3zr8H0O9nuaB4jwNWHmASJ+S0xEHnNxdxSStgUYui8=\",\"type\":\"7\",\"seconds\":\"17\"}")
@@ -20,7 +20,7 @@ vshurlArr.push("http://iosvsh.zwzanwm.cn/app/svjl")
     vsh2bodyArr.push("{\"isDouble\":\"0\",\"moneyId\":\"0\",\"mark\":\"5II1v0RxvGeqdjp\\/Y3iVRUHOtPbmLYUDq+FmtP8An24Pntz32o9jygE73ntAZzXml2bNgQAaOdF1QtQ7lwH5ieTSNDJybtz5mCN3DbwoD7M=\",\"type\":\"2\",\"seconds\":\"37\"}")
     vshbodyArr.push("{\"isDouble\":\"0\",\"moneyId\":\"0\",\"mark\":\"a\\/ZzRgPl0ZMrVamRNgfchtWT\\/RZwdu03vd762zndizhZc\\/5ymCNyKkjRe5J3wnK8f6diW+tHnHACQMYXTzxkVvPNNAPFWBeqj8xx0\\/m4MUQ=\",\"type\":\"8\",\"seconds\":\"40\"}")
     vshqdbodyArr.push("{\"transId\":\"rY\\/m1U8pNHL07uxQtEhQXHNty0an92bNBvJIVno1KYhB7jpEDukdI5U0C0y6hkbu\",\"key\":\"12\"}")
-    vshcount = ($.getval('vshcount') || '1');  /*短视频刷金币开关(1 是刷短视频，0 是不刷短视频),短视频刷金币因为时间很长,且不知道上限,默认为关闭状态,
+    vshcount = ($.getval('vshcount') || '0');  /*短视频刷金币开关(1 是刷短视频，0 是不刷短视频),短视频刷金币因为时间很长,且不知道上限,默认为关闭状态,
     脚本只会运行除了短视频之外的任务,需要刷短视频金币的,建议先跑完日常任务再去boxjs里把短视频刷金币开关改为1,之后脚本只会运行刷短视频任务。。*/
 !(async () => {
 
